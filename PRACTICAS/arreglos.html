@@ -1,0 +1,85 @@
+<script>
+    var myArray = ["John", 24]; //Arrays
+    console.log(myArray);
+
+    var students = ["Nora", "Gino", "Emily", "Juan"];
+    console.log(students);
+
+
+    var nouts = [95, 67, 89, 56];
+    console.log(nouts);
+
+    //Arreglos Anidados
+    var studentsList = [
+        ["Nora", 97],
+        ["Gino", 78]
+    ];
+
+    console.log(studentsList);
+
+    var productList = [
+        ["Camisa", 5.67, "S134"],
+        ["Celular", 250, "S356"],
+        ["Zapa", 36.7, "S678"]
+    ]
+    console.log(productList);
+
+
+    var date = [
+        [3.4, 5.6, 3.2],
+        [6.7, 4.5, 7.8],
+        [5.6, 3.4, 7.8]
+    ];
+    console.log(date);
+
+    //Acceder a los elementos de un Arreglo 
+
+    var myArraytwo = [10, 20, 30];
+
+    console.log(myArraytwo[0]); // 10
+    console.log(myArraytwo[1]); // 20
+    console.log(myArraytwo[2]); // 30
+    console.log(myArraytwo[3]); // Undefined
+
+    var sum = myArraytwo[0] + myArraytwo[1] + myArraytwo[2];
+    console.log(sum);
+
+
+    //Modificar Elementos de un arreglo 
+
+    var myArrayThree = [10, 20, 30];
+    console.log(myArrayThree[0]);
+
+
+    myArrayThree[0] = 40;
+
+    console.log(myArrayThree[0]);
+
+    console.log(myArrayThree[1]);
+
+    myArrayThree[1] = "Hola";
+
+    console.log(myArrayThree[1]);
+
+    myArrayThree[1] = [1, 2, 3];
+
+    console.log(myArrayThree);
+
+    //Acceder a arreglos Multidimensionales
+    var myArrayFour = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
+
+    console.log(myArrayFour[0]);
+    console.log(myArrayFour[1]);
+    console.log(myArrayFour[2]);
+
+    //Quiero acceder a sus elementos 
+    console.log(myArrayFour[1][2]); //[4,5,6] --> = 6
+
+    console.log(myArrayFour[2][0]); //[7,8,9] --> = 7
+
+    console.log(myArrayFour[0][1]); //[1,2,3] --> = 2
+</script>

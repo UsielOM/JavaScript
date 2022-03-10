@@ -71,3 +71,78 @@ console.log(curso.vistas);
 delete curso.duracion;
 
 console.log(curso);
+
+//BUSQUEDAS
+
+
+function buscarElementoQuimico(simbolo) {
+
+    var simbolosQuimicos = {
+        "A1": "Aluminio",
+        "S": "Azufre",
+        "C1": "Cloro",
+        "He": "Elio",
+        "B": "Boro",
+        "Li": "Litio"
+    };
+
+    // switch (simbolo) {
+    //     case "A1":
+    //         elementoQuimico = "Aluminio";
+    //         break;
+    //     case "S":
+    //         elementoQuimico = "Azufre";
+    //         break;
+    //     case "C1":
+    //         elementoQuimico = "Cloro";
+    //         break;
+    //     case "He":
+    //         elementoQuimico = "Elio";
+    //         break;
+    //     case "B":
+    //         elementoQuimico = "Boro";
+    //         break;
+    //     case "Li":
+    //         elementoQuimico = "Litio";
+    //         break;
+
+
+
+
+
+
+    // }
+    return simbolosQuimicos[simbolo];
+}
+console.log(buscarElementoQuimico("B"));
+
+//Verificar propiedades 
+
+var myCuaderno = {
+    "color": "verde",
+    "categoria": 3,
+    "precio": 4.56
+};
+
+console.log(myCuaderno.hasOwnProperty("color"));
+
+console.log(myCuaderno.hasOwnProperty("origen"));
+
+
+function verificarPropiedad(obj, propiedad) {
+    if (obj.hasOwnProperty(propiedad)) {
+        return "Propiedad: " + obj[propiedad];
+    } else {
+        return "El objeto no tien esta propiedad";
+    }
+
+
+
+}
+
+console.log(verificarPropiedad(myCuaderno, "precio"));
+
+
+
+
+//Objet
